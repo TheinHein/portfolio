@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import projects from "./data/projects.json";
+import ReactMarkdown from "react-markdown";
 
 function App() {
+  console.log(projects);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {projects.length > 0 &&
+        projects.map((p, i) => (
+          <article key={i}>
+            <header>
+              <h3>{p.title}</h3>
+            </header>
+            <img src={p.thumbnail} alt="thumbnail" />
+            <ReactMarkdown children={p.content} />
+          </article>
+        ))}
     </div>
   );
 }
