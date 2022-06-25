@@ -22,7 +22,7 @@ collections:
 # global
 media_library:
   name: cloudinary
-  output_filename_only: true # src="https://res.cloudinary.com/<cloud_name>/<resource_type>/<type>/<transformations>/{{image}}"/>
+  output_filename_only: true
   config:
     cloud_name: dpe9ysnle
     api_key: 384586275264279
