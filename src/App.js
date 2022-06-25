@@ -16,7 +16,7 @@ function App() {
               <h3>{p.title}</h3>
             </header>
             {/* https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/battleship_fse4qk.png */}
-            <img src={p.thumbnail} alt={p.thumbnail} />
+            <img src={cloudinary + p.thumbnail} alt={p.thumbnail} />
             <ReactMarkdown children={p.content} />
           </article>
         ))}
