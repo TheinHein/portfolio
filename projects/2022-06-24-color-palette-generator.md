@@ -4,7 +4,7 @@ title: Color Palette Generator
 description: The website lets you create and save color palettes from scratch or
   choose one of the pre-built color palettes to use them anywhere.
 date: 2022-06-24T21:51:52.745Z
-thumbnail: /images/cld-sample-4.jpg
+thumbnail: /battleship_fse4qk.png
 ---
 
 # Features
