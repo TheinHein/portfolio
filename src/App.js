@@ -3,7 +3,7 @@ import projects from "./data/projects.json";
 import ReactMarkdown from "react-markdown";
 
 const cloudinary =
-  "https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/";
+  "https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images";
 
 function App() {
   console.log(projects);
