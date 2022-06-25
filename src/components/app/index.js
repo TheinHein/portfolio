@@ -1,14 +1,13 @@
-import "./App.css";
-import projects from "./data/projects.json";
+import projects from "../../data/projects.json";
 import ReactMarkdown from "react-markdown";
 
 const cloudinary =
-  "https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/";
+  "https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images";
 
-function App() {
+const App = () => {
   console.log(projects);
   return (
-    <div className="App">
+    <div>
       {projects.length > 0 &&
         projects.map((p, i) => (
           <article key={i}>
@@ -16,12 +15,12 @@ function App() {
               <h3>{p.title}</h3>
             </header>
             {/* https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/battleship_fse4qk.png */}
-            <img src={p.thumbnail} alt={p.thumbnail} />
+            <img src={cloudinary + p.thumbnail} alt={p.thumbnail} />
             <ReactMarkdown children={p.content} />
           </article>
         ))}
     </div>
   );
-}
+};
 
 export default App;
