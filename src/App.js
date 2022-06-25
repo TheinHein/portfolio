@@ -2,6 +2,9 @@ import "./App.css";
 import projects from "./data/projects.json";
 import ReactMarkdown from "react-markdown";
 
+const cloudinary =
+  "https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/";
+
 function App() {
   console.log(projects);
   return (
@@ -12,7 +15,11 @@ function App() {
             <header>
               <h3>{p.title}</h3>
             </header>
-            <img src={p.thumbnail} alt="thumbnail" />
+            {/* https://res.cloudinary.com/dpe9ysnle/image/upload/portfolio/images/battleship_fse4qk.png */}
+            <img
+              src={`${cloudinary + p.thumbnail}`}
+              alt={`hello${p.thumbnail}`}
+            />
             <ReactMarkdown children={p.content} />
           </article>
         ))}

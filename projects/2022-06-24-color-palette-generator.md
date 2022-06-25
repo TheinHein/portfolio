@@ -6,7 +6,9 @@ description: The website lets you create and save color palettes from scratch or
 date: 2022-06-24T21:51:52.745Z
 thumbnail: https://res.cloudinary.com/dpe9ysnle/image/upload/v1655994371/portfolio/colors_yck1fa.png
 ---
-#Features
+
+# Features
+
 - Pick one of the 9 pre-built palettes.
 - Create one from scratch or adjust the default one to your likeliness.
 - Generate a random color and add it to your palette or choose one from color picker. Give it a name. Don't worry about adding same color twice.
