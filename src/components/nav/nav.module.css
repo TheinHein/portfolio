@@ -1,0 +1,96 @@
+.nav {
+  background-color: #fff;
+  padding: 12px 0;
+  z-index: 9999;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.menu > li {
+  display: inline-block;
+  margin: 0 calc(16px + 1vw);
+}
+
+.menu a {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.vertical {
+  width: fit-content;
+  list-style: none;
+}
+
+.vertical li {
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.vertical a {
+  font-size: 0.8rem;
+  padding: 0 4px 0 16px;
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 24px;
+  padding: 4px 0;
+  background-color: #000;
+}
+
+.sticky::after {
+  content: "";
+  background-color: #000;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: -20px;
+  clip-path: polygon(100% 100%, 50% 50%, 0 100%, 0 0, 100% 0);
+}
+
+.sticky > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sticky button {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.placeholder {
+  width: 100%;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu > li {
+    margin: 0 calc(8px + 1vw);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sticky {
+    right: calc((100vw - 1280px) / 2);
+  }
+}

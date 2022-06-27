@@ -1,0 +1,108 @@
+.project-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 100vh;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.description-wrapper {
+  min-width: 300px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 600px;
+  padding: 64px;
+  margin: 8px;
+  max-width: 50ch;
+  order: 1;
+}
+
+.description-wrapper p {
+  text-indent: 32px;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.image-wrapper {
+  min-width: 300px;
+  margin: 0 8px;
+  order: 2;
+}
+
+.image-wrapper > img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 4px 6px 8px 0px #00000040, -4px 6px 8px 0px #00000040;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: fit-content;
+  order: 0;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.button span {
+  writing-mode: vertical-rl;
+}
+
+.button-group hr {
+  margin: 0;
+}
+
+.last {
+  order: 2;
+}
+
+.first {
+  order: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 32px;
+    place-items: center;
+  }
+
+  .description-wrapper {
+    padding: 32px 16px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    order: 2;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .button > span {
+    writing-mode: horizontal-tb;
+  }
+
+  .image-wrapper {
+    order: 0;
+  }
+
+  .image-wrapper > img {
+    max-height: 100%;
+    width: auto;
+    box-shadow: 4px 6px 8px 0px #00000040, -4px 6px 8px 0px #00000040;
+  }
+}

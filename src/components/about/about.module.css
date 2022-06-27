@@ -1,0 +1,18 @@
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 64px;
+}
+
+.body {
+  text-align: center;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.body > p {
+  max-width: 75ch;
+  margin-bottom: 8px;
+}

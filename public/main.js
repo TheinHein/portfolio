@@ -90,8 +90,11 @@ const getProjects = () => {
             ? metadata.description
             : "No description given",
           date: publishedDate ? publishedDate : "No date given",
-          time: parsedDate["time"],
           thumbnail: metadata.thumbnail,
+          technologies: metadata.technologies
+            ? metadata.technologies
+            : "No technologies given",
+          time: parsedDate["time"],
           content: content ? content : "No content given",
         };
         projectList.push(project);
@@ -101,7 +104,7 @@ const getProjects = () => {
             return a.id < b.id ? 1 : -1;
           });
           let data = JSON.stringify(sortedList);
-          fs.writeFileSync("src/data/projects.json", data);
+          fs.writeFileSync("src/assets/data/projects.json", data);
         }
       });
     });

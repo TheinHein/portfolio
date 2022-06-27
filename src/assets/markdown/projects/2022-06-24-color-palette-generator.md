@@ -1,13 +1,11 @@
 ---
 layout: blog
 title: Color Palette Generator
-description: The website lets you create and save color palettes from scratch or
-  choose one of the pre-built color palettes to use them anywhere.
+description: The website lets you create and save color palettes from scratch or choose one of the pre-built color palettes to use them anywhere.
 date: 2022-06-24T21:51:52.745Z
-thumbnail: https://res.cloudinary.com/dpe9ysnle/image/upload/v1655994371/portfolio/colors_yck1fa.png
+thumbnail: /colors_yck1fa.png
+technologies: ["javascript", "react"]
 ---
-
-# Features
 
 - Pick one of the 9 pre-built palettes.
 - Create one from scratch or adjust the default one to your likeliness.

@@ -1,0 +1,19 @@
+.icon-group {
+  display: flex;
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 500px;
+  height: 70px;
+}
+
+.image-wrapper {
+  margin: 0 32px;
+  width: 64px;
+  height: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-group {
+    width: 250px;
+  }
+}

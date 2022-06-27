@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "title";
+  src: url("./assets/fonts/title/Nosifer-Regular.woff2") format("woff2"),
+    url("./assets/fonts/title/Nosifer-Regular.woff") format("woff"),
+    url("./assets/fonts/title/Nosifer-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "heading";
+  src: url("./assets/fonts/heading/Fascinate-Regular.woff2") format("woff2"),
+    url("./assets/fonts/heading/Fascinate-Regular.woff") format("woff"),
+    url("./assets/fonts/heading/Fascinate-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "body";
+  src: url("./assets/fonts/body/SairaSemiCondensed-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/body/SairaSemiCondensed-Regular.woff") format("woff"),
+    url("./assets/fonts/body/SairaSemiCondensed-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "button";
+  src: url("./assets/fonts/button/BigShouldersDisplay-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/fonts/button/BigShouldersDisplay-SemiBold.woff")
+      format("woff"),
+    url("./assets/fonts/button/BigShouldersDisplay-SemiBold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "misc";
+  src: url("./assets/fonts/misc/LibreBarcode128Text-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/misc/LibreBarcode128Text-Regular.woff") format("woff"),
+    url("./assets/fonts/misc/LibreBarcode128Text-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: body, sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(63, 63, 63);
+  max-width: 1280px;
+}
+
+h1,
+h2 {
+  font-family: title;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: heading, sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: heading, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+button {
+  font-family: button, sans-serif;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+.header {
+  padding: 16px calc(16px + 2vw);
+  background-color: #000;
+  color: #fff;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

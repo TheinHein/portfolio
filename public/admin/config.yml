@@ -19,6 +19,18 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Technologies",
+          name: "technologies",
+          widget: "list",
+          field: { label: Technology, name: technology, widget: string },
+        }
+  - name: "about"
+    label: "About"
+    folder: "src/assets/markdown"
+    fields:
+      - { label: "Body", name: "body", widget: "markdown" }
+
 # global
 media_library:
   name: cloudinary
