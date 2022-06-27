@@ -1,5 +1,4 @@
 import Banner from "../banner";
-import Nav from "../nav";
 import About from "../about";
 import Projects from "../projects";
 import Contact from "../contact";

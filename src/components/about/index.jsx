@@ -6,7 +6,6 @@ import ReactMarkdown from "react-markdown";
 import about from "../../assets/markdown/about.md";
 
 const About = (props) => {
-  console.log(about);
   const [content, setContent] = React.useState("");
 
   React.useEffect(() => {

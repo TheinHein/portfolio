@@ -4,7 +4,7 @@ import clsx from "clsx";
 import styles from "./project-card.module.css";
 
 const ProjectCard = (props) => {
-  const { title, thumbnail, description, technologies, reverse } = props;
+  const { title, thumbnail, description, reverse } = props;
   const [transform, setTransform] = React.useState("w_600,h_600");
 
   const cloudinary = "https://res.cloudinary.com/dpe9ysnle/image/upload/";
